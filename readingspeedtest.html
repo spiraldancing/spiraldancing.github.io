@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>A Reading Speed Test</title>
+	<script src="readingSpeedTest.js"></script>
+	<style>
+		table,td
+		{
+			border-collapse:collapse;
+			text-align:center;
+			padding:1px
+		}
+	</style>
+</head>
+
+<body>
+<h3>Reading Speed Test Utility</h3>
+
+<table style="width:760px">
+	<tr>
+		<td>Header / Title / Instructions Here</td>
+	</tr>
+	<tr>
+		<td><textarea id="testText" cols="85" rows="35" onClick="manageText()" onChange="analyzeText()">Insert text to read here.</textarea></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="startStop" onClick="startStop()" value="Start" /></td>
+	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td width="49%"></td>
+					<td>
+						<table style="width:64px">
+							<tr>
+								<td width="20px"><span style="text-align:left" id="minutes">00:</span></td>
+								<td width="20px"><span style="text-align:left" id="seconds">00:</span></td>
+								<td width="12px"><span style="text-align:left" id="millis">0</span></td>
+							</tr>
+						</table>
+					</td>
+					<td width="49%"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><span id="wordCount">Total # of words:  </span></td>
+	</tr>
+	<tr>
+		<td><span id="wordSize">Average word size:  </span></td>
+	</tr>
+	<tr>
+		<td><span id="readingSpeed">Reading speed:  </span></td>
+	</tr>
+</table>
+<br />
+<br />
+<table style="width:760px">
+	<tr>
+		<td colspan="2">Stopwatch</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<table>
+				<tr>
+					<td width="49%"></td>
+					<td>
+						<table style="width:64px">
+							<tr>
+								<td width="20px"><span style="text-align:left" id="mins">00:</span></td>
+								<td width="20px"><span style="text-align:left" id="secs">00:</span></td>
+								<td width="12px"><span style="text-align:left" id="mils">0</span></td>
+							</tr>
+						</table>
+					</td>
+					<td width="49%"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" id="startStopwatch" onClick="startStopwatch()" value="Start" />
+		<input type="button" id="lapStop" onClick="lapStop()" value="Split" />
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left;width:150px"><span style="width:150px;text-align:right">Total split time:  </span>
+		<span id="splitTime"></span></td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><span style="width:150px;text-align:right">Lap time:  </span>
+		<span id="lapTime"></span></td>
+	</tr>
+</table>
+</body>
+</html>
