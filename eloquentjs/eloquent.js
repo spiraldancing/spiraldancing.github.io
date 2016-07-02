@@ -25,3 +25,21 @@ function chapter02Exercise02()
 	    console.log(i);
 	}
 }
+
+function chapter02Exercise03()
+{
+	// Your code here.
+	var size = 8;
+	for (var x = 0; x < size; x++)
+	{
+	  var nextLine = "";
+	  for (var y = 0; y < size; y++)
+	  {
+	    if ((x + y) % 2 == 0)
+	      nextLine += " ";
+	    else
+	      nextLine += "#";
+	  }
+	  console.log(nextLine);
+	}
+}
