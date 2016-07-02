@@ -10,7 +10,7 @@ function chapter02Exercise01()
   }
 }
 
-function chapter03Exercise02()
+function chapter02Exercise02()
 {
 	// Your code here.
 	for (var i = 1; i <= 100; i++)
