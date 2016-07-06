@@ -57,3 +57,21 @@ function chapter03Exercise01()
 	console.log(min(0, -10));
 	// → -10
 }
+
+function chapter03Exercise02()
+{
+	// Your code here.
+	function isEven(a){
+	  if (a < 0) return false;
+	  if (a > 1) return isEven(a-2);
+	  return (a == 0);
+	}
+
+	console.log(isEven(50));
+	// → true
+	console.log(isEven(75));
+	// → false
+	console.log(isEven(-1));
+	// → ??
+}
+
