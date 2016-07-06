@@ -43,3 +43,17 @@ function chapter02Exercise03()
 	  console.log(nextLine);
 	}
 }
+
+function chapter03Exercise01()
+{
+	// Your code here.
+	function min(a, b){
+	  if (a < b) return a;
+	  return b;
+	}
+
+	console.log(min(0, 10));
+	// → 0
+	console.log(min(0, -10));
+	// → -10
+}
