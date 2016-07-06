@@ -75,3 +75,23 @@ function chapter03Exercise02()
 	// → ??
 }
 
+function chapter03Exercise03()
+{
+	// Your code here.
+	function countBs(x){
+	  return countChar(x, "B");
+	}
+
+	function countChar(x, y){
+	  var count = 0;
+	  for (var i = 0; i < x.length; i++)
+	    if (x.charAt(i) == y) count++;
+	  return count;
+	}
+
+	console.log(countBs("BBC"));
+	// → 2
+	console.log(countChar("kakkerlak", "k"));
+	// → 4
+}
+
